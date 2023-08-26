@@ -3,9 +3,8 @@ import { TheaterRepository } from "../model/theater.repository";
 import { Movie } from "../model/theater.model";
 
 @Component({
-    selector: "app-home",
-    templateUrl: "./home.component.html",
-    styleUrls: ["./home.component.css"]
+    selector: "app-booking",
+    templateUrl: "./booking.component.html",
 })
 export class HomeComponent {
     activeMenu = 1; // Default active menu
