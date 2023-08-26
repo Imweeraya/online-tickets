@@ -11,8 +11,10 @@ import { Movie } from "../model/theater.model";
     styleUrls: ["./home.component.css"]
 })
 export class HomeComponent {
+
     activeMenu = 1; 
     activeMovie : Movie | undefined; 
+    router: any;
     constructor(private repository: TheaterRepository) {}
 
     changeMenu(menuId: number): void {
@@ -23,8 +25,11 @@ export class HomeComponent {
      getMovie(id: number): void {
         this.repository.getMovie(id);
     }
+    changerepository() {
+        this.router.navigateByUrl("/booking");
+    }
 
-    
+
 
     
 }

@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './store/home.component';
 import { StoreModule } from './store/store.module';
+import { BookingComponent } from './store/booking.component';
 
 @NgModule({
   declarations: [AppComponent],
