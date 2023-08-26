@@ -1,0 +1,15 @@
+<div class="my-tab-content container bg-white p-4">
+    <!-- Movie details -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="d-flex col-sm-6 justify-content-center justify-content-sm-end">
+          <img class="shadow" src="{{ activeMovie?.coverImg }}" style="width: 240px;">
+        </div>
+        <div class="col-sm-6">
+          <div class="h5 text-primary fw-bold my-3">{{ activeMovie?.name }}</div>
+          <div class="h6">หมวดหมู่: {{ activeMovie?.genre }}</div>
+          <div class="h6">เรท: {{ activeMovie?.rate }}</div>
+          <div class="h6"><i class="fa-regular fa-clock"></i> {{ activeMovie?.length }} นาที</div>
+        </div>
+    </div>
+</div>

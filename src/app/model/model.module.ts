@@ -11,7 +11,7 @@ import { StaticDataSource } from "./static.datasource";
     TheaterRepository,
     RestDataSource,
     StaticDataSource,
-    { provide: StaticDataSource }
+    { provide: StaticDataSource ,useClass: RestDataSource}
   ],
 })
 export class ModelModule {}
